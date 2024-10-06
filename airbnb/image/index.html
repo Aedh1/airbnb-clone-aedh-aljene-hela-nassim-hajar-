@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Airbnb Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  
+
+</head>
+<body>
+
+  
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/768px-Airbnb_Logo_B%C3%A9lo.svg.png" alt="Airbnb Logo" class="airbnb-logo">
+    </div>
+    <div class="search-bar">
+      <div class="search-row">
+        <input id="iii" type="text" placeholder="Anywhere">
+      </div>
+      <div class="search-row">
+        <input id="iii" type="text" placeholder="Any week">
+        <input id="iiii" type="text" placeholder="Add guests">
+        <button id="iconi" class="search-btn"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+    <div class="header-right">
+      <span>Airbnb your home</span>
+      <button id="date-btn">Select Date</button> <!-- New Date button -->
+      <img src="https://static.vecteezy.com/system/resources/previews/026/631/769/original/globe-icon-symbol-design-illustration-vector.jpg" id="imageglob" alt="globe">
+      <img id="account" src="account.png" alt="">
+    </div>
+
+    <!-- Date Picker Popup -->
+<div id="date-popup" class="popup">
+  <div class="popup-content">
+      <span class="close-btn-date">&times;</span>
+      <iframe src="calendar.html" id="calendar-iframe" style="border: none;"></iframe>
+  </div>
+</div>
+
+<!-- Gray Overlay for Date -->
+<div id="overlay-date" class="overlay"></div>
+
+    
+    <!-- User Profile Popup -->
+<!-- User Profile Popup -->
+<div id="user-profile-popup" class="profile-popup">
+  <div class="popup-content">
+    <!-- Close Button -->
+    <span class="close-btn">&times;</span>
+
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <!-- Profile Header -->
+      <div class="profile-header1">
+        <div class="profi-section">
+        <img src="https://myspeaker.fr/wp-content/uploads/sites/6/2024/01/Bacely-YoroBi-300x300-Bacely-Yorobi.jpg" alt="User Profile" class="profile-picture">
+        <h3><b>Rahul</b></h3>
+        <b>Superhost</b>
+        </div>
+        <div class="rating-section">
+          <p><strong>17</strong> Reviews</p>
+          <p><strong>4.94</strong> ★ Rating</p>
+          <p><strong>8</strong> Years hosting</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Profile Info Section -->
+    <div class="profile-info">
+      <p id="tes"><i class="fa fa-briefcase"></i> My work: UX designer</p>
+      <p id="tes"><i class="fa fa-globe"></i> Fun fact: I am open for remote jobs</p>
+      <p id="tes"><i class="fa fa-lightbulb-o"></i> For guests, I always: Share local tips</p>
+      <p id="tes"><i class="fa fa-heart"></i> I'm obsessed with: Traveling & tennis</p>
+      <p id="tes"><i class="fa fa-paw"></i> Pets: All my plants</p>
+      <p id="tes"><i class="fa fa-birthday-cake"></i> Born in the 20s</p>
+      <p id="tes"><i class="fa fa-book"></i> My biography title: Only Vegan at Home</p>
+      <p id="tes"><i class="fa fa-language"></i> Speaks: English, Telugu & Hindi</p>
+      <p id="tes"><i class="fa fa-cutlery"></i> What's for breakfast: Overnight oats</p>
+      <p id="tes"><i class="fa fa-clock-o"></i> I spend too much time: Looking at design</p>
+      <p id="tes"><i class="fa fa-graduation-cap"></i> Where I went to school: India</p>
+    </div>
+
+    <br>
+    <!-- Ask Rahul About Section -->
+    <div class="ask-rahul">
+      <h4>Ask Rahul about</h4>
+      <div class="tags">
+        <span>Art</span><span>Building things</span>
+        <span>Cooking</span><span>Crafting</span>
+        <span>Cultural heritage</span><span>Design</span>
+        <span>Tennis</span><span>Travel</span>
+      </div>
+    </div>
+
+
+    <br>
+    <!-- Past Trips Section -->
+    <div class="past-trips">
+      <h4>Rahul’s past trips</h4>
+      <div class="trip-cards">
+        <div class="trip-card">Dandeli, Karnataka</div>
+        <div class="trip-card1">Srisailam, Andhra Pradesh</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gray Overlay -->
+<div id="overlay" class="overlay"></div>
+
+
+    
+  </header>
+
+
+  <!-- Icon Navigation Section -->
+  <nav class="icon-nav">
+    <ul id="point">
+      <li id="point">
+        <img src="Rooms Icon (1).png" alt="Rooms Icon">
+        <br>
+        <b id = "sous" href="#">Rooms</b>
+      </li>
+      <li id="point">
+        <img src="Farms Icon (1).png" alt="Farms Icon">
+        <br>
+        <b id = "sous" href="#">Farms</b>
+      </li>
+      <li id="point">
+        <img src="Pools Icon (1).png" alt="Amazing Pools Icon">
+        <br>
+        <b id = "sous" href="#">Amazing Pools</b>
+      </li>
+      <li id="point">
+        <img src="Country Side Icon (1).png" alt="Countryside Icon">
+        <br>
+        <b id = "sous" href="#">Countryside</b>
+      </li>
+      <li id="point">
+        <img src="National Parks Icon (1).png" alt="National Parks Icon">
+        <br>
+        <b id = "sous" href="#">National Parks</b>
+      </li>
+      <li id="point">
+        <img src="Historical Homes Icon (1).png" alt="Historical Homes Icon">
+        <br>
+        <b id = "sous" href="#">Historical Homes</b>
+      </li>
+      <li id="point">
+        <img src="Group 7 (1).png" alt="Tiny Homes Icon">
+        <br>
+        <b id = "sous" href="#">Tiny Homes</b>
+      </li>
+      <li id="point">
+        <img src="Group 8 (1).png" alt="Lakefront Icon">
+        <br>
+        <b id = "sous" href="#">Lakefront</b>
+      </li>
+      <li id="point">
+        <img src="Group 9 (1).png" alt="Cabins Icon">
+        <br>
+        <b id = "sous" href="#">Cabins</b>
+      </li>
+      <li id="point">
+        <img src="Group 10 (1).png" alt="Beachfront Icon">
+        <br>
+        <b id = "sous" href="#">Beachfront</b>
+      </li>
+      <li id="point">
+        <img src="Group 11 (1).png" alt="Castles Icon">
+        <br>
+        <b id = "sous" href="#">Castles</b>
+      </li>
+      <li id="point">
+        <img src="Group 12 (1).png" alt="Design Icon">
+        <br>
+        <b id = "sous" href="#">Design</b>
+      </li>
+      <li id="point">
+        <img src="Group 13 (1).png" alt="Amazing Views Icon">
+        <br>
+        <b id = "sous" href="#">Amazing Views</b>
+      </li>
+
+      <li id="point">
+        <b id="space">></b>   
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="price-toggle-container">
+    <div class="price-toggle">
+      <span class="toggle-text-black">Display total price</span>
+      <span class="toggle-text-grey">Includes all fees, before taxes</span>
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+
+  <!-- Main Content (with posts) -->
+  <main>
+    <div class="room-container">
+      <!-- Room card 1 -->
+      <div class="room-card">
+        <img class="room-image" src="https://via.placeholder.com/220x150.png?text=Room+Image" alt="Room">
+        <div class="room-info">
+          <p>Hyderabad, India</p>
+          <p>Design with Rahul, UX designer</p>
+          <p>24-29 Jul</p>
+          <p>₹1,500 / night</p>
+          <span class="rating">★ 5.0</span>
+        </div>
+        <div class="heart-icon"><i class="fa fa-heart"></i></div>
+      </div>
+
+      <!-- Repeat Room cards for the next 3 cards -->
+      <!-- Room card 2 -->
+      <div class="room-card">
+        <img class="room-image" src="https://via.placeholder.com/220x150.png?text=Room+Image" alt="Room">
+        <div class="room-info">
+          <p>Hyderabad, India</p>
+          <p>Design with Rahul, UX designer</p>
+          <p>24-29 Jul</p>
+          <p>₹1,500 / night</p>
+          <span class="rating">★ 5.0</span>
+        </div>
+        <div class="heart-icon"><i class="fa fa-heart"></i></div>
+      </div>
+
+      <!-- Room card 3 -->
+      <div class="room-card">
+        <img class="room-image" src="https://via.placeholder.com/220x150.png?text=Room+Image" alt="Room">
+        <div class="room-info">
+          <p>Hyderabad, India</p>
+          <p>Design with Rahul, UX designer</p>
+          <p>24-29 Jul</p>
+          <p>₹1,500 / night</p>
+          <span class="rating">★ 5.0</span>
+        </div>
+        <div class="heart-icon"><i class="fa fa-heart"></i></div>
+      </div>
+
+      <!-- Room card 4 -->
+      <div class="room-card">
+        <img class="room-image" src="https://via.placeholder.com/220x150.png?text=Room+Image" alt="Room">
+        <div class="room-info">
+          <p>Hyderabad, India</p>
+          <p>Design with Rahul, UX designer</p>
+          <p>24-29 Jul</p>
+          <p>₹1,500 / night</p>
+          <span class="rating">★ 5.0</span>
+        </div>
+        <div class="heart-icon"><i class="fa fa-heart"></i></div>
+      </div>
+    </div>
+  </main>
+<br>
+  <footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <ul>
+                <li><p>&copy; 2023 Airbnb, Inc.</p></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Company details</a></li>
+                <li><a href="#">Destinations</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <ul>
+                <li><img src="https://static.vecteezy.com/system/resources/previews/026/631/769/original/globe-icon-symbol-design-illustration-vector.jpg" id="imageglob" alt=""></li>
+                <li><a href="#">English (IN)</a></li>
+                <li><a href="#">₹ INR</a></li>
+                <li><a href="#">Support & resources</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="controll.js"></script>
+</body>
+</html>

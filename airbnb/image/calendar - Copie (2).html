@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier Dynamique</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 id="e">When's your trip?</h2>
+            <div class="options-container">
+                <div id="choose-dates" class="option">Choose Dates</div>
+                <div id="im-flexible" class="option">I'm Flexible</div>
+            </div>
+            
+            
+        </div>
+
+        <div class="calendar">
+            <div class="calendar-header">
+                <button class="prev-month">&lt;</button>
+                <div class="month-year">
+                    <span id="month"></span> <span id="year"></span>
+                </div>
+                <button class="next-month">&gt;</button>
+            </div>
+
+            <div class="weekdays">
+                <div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>
+            </div>
+            <div class="days" id="days"></div>
+        </div>
+
+        <div class="days-options">
+            <button class="exact-days">Exact days</button>
+            <button class="exact-days">± 1 day</button>
+            <button class="exact-days">± 2 day</button>
+            <button class="exact-days">± 3 day</button>
+           
+        </div>
+        
+        
+
+       
+        <div class="homes-available">
+            <span id="sm">4 homes available</span>
+            <img src="Capture d'écran 2024-10-06 202149.png" alt="House 1" class="house-icon" id="ic1">
+            <img src="Capture d'écran 2024-10-06 202149.png" alt="House 2" class="house-icon" id="ic2">
+            <img src="Capture d'écran 2024-10-06 202149.png" alt="House 3" class="house-icon" id="ic3">
+            <img src="Capture d'écran 2024-10-06 202149.png"alt="house4"class="house-icon" id="ic4">
+            
+        </div>
+        
+
+        <div class="calendar-container">
+            <!-- Votre code de calendrier ici -->
+        </div>
+        
+        <!-- Conteneur pour les boutons en dehors du calendrier -->
+        
+        <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+            <link rel="stylesheet" href="styles.css"> <!-- Assurez-vous de relier votre fichier CSS -->
+        </head>
+          
+        
+    <!-- Placer le script JavaScript ici, juste avant la fermeture de la balise body -->
+    <script src="calendar.js"></script>
+
+</div>  
+
+<div class="container1">
+    <button class="clear-button"><u>Clear</u></button>
+    <button class="save-button">Save</button>
+    <br><br><br>
+</div> 
+</body>
+</html>

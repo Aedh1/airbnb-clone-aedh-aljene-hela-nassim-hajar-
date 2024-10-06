@@ -1,0 +1,1042 @@
+/* General Styles */
+
+
+/* Header */
+
+
+.airbnb-logo {
+    width: 100px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    padding: 8px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    width: 400px;
+    /* No centering by default */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.search-btn {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 35px;  /* Fixed width */
+    height: 35px; /* Fixed height */
+}
+
+#ss{
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-right span {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#imageglob {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.icon-nav{
+    margin-right: 30px;
+}
+/* Icon Navigation */
+.icon-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    
+}
+
+.icon-nav ul li {
+    text-align: center;
+}
+
+/* Room Cards */
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #717171;
+}
+
+.footer-left ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-left ul li, .footer-right ul li {
+    margin-right: 15px;
+}
+
+.footer-left ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #717171;
+}
+
+/* Responsive Design */
+
+/* Tablet View (max-width 768px) */
+@media (max-width: 956px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .airbnb-logo {
+        width: 80px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin: 0 auto;  /* Center the search bar */
+        justify-content: center;  /* Center content inside search bar */
+    }
+
+    .room-container {
+        grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    }
+
+    .icon-nav ul {
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile View (max-width 482px) */
+/* Mobile View (max-width 420px) */
+@media (max-width: 464px) {
+
+    
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .airbnb-logo {
+        width: 60px;
+    }
+
+    
+    /* Search Bar: vertical layout for mobile */
+    .search-bar {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center;    /* Center the elements horizontally */
+        justify-content: center; /* Center the elements vertically */
+        width: 100%;            /* Full width on mobile */
+        padding: 15px;          /* Add padding for better appearance */
+    }
+
+    /* Inputs in search bar */
+    .search-bar input {
+        width: 90%;             /* Make input fields wider */
+        margin-bottom: 10px;    /* Add space between inputs */
+        text-align: center;     /* Ensure input text is centered */
+    }
+
+    /* Fix centering for #iconi */
+    #iconi {
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto; /* Center the button horizontally */
+        display: flex;
+        justify-content: center; /* Center the icon inside the button horizontally */
+        align-items: center;     /* Center the icon inside the button vertically */
+    }
+
+    .header-right {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon-nav ul {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .room-container {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left ul,
+    .footer-right ul {
+        flex-direction: column;
+    }
+
+    .footer-left ul li,
+    .footer-right ul li {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+
+
+#point{
+    cursor: pointer;
+}
+
+.image-rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light grey background */
+    width: 100%;
+    height: 300px; /* Adjust the height */
+    margin: 20px 0; /* Spacing around the rectangle */
+}
+
+.center-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Keeps the aspect ratio of the image */
+}
+
+/* Styles for the price toggle container */
+.price-toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 6px 4px 3px 4px ;
+    margin: 20px auto;
+    width: 42%;
+    border-radius: 10px;
+    border: solid 2.5px rgb(247, 247, 247);
+
+}
+
+.price-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.toggle-text-black {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    
+}
+
+.toggle-text-grey {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+    
+}
+
+#iii{
+    border-style: none solid none none ;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right-width: thin;
+    border-color: #c2c2c2e4;
+    
+}
+
+#account{
+    width: 65px;
+    height: 37px;
+    cursor: pointer;
+    
+}
+
+@media (max-width: 464px) {
+    #iii{
+        border-style: none none none none ;
+        
+        margin: 9px;
+    }
+
+    #iiii{
+        border-style: none none none none ;
+        
+        margin: 9px;
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ff5a5f;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #ff5a5f;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+#space{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Header */
+
+
+#sous{
+    font-size: 12px;
+}
+
+
+
+#iconi {
+    width: 35px;
+    height: 35px;
+    
+
+}
+
+
+.language-selector,
+.menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Icon Navigation */
+.icon-nav ul {
+    list-style-type: none; /* Enlève les points des <li> */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.icon-nav ul li {
+    text-align: center;
+}
+
+/* Room Cards */
+
+
+
+
+
+#sizeimg {
+    width: 265px;
+    height: 265px;
+}
+
+
+
+
+
+/* Général Styles */
+/* Général Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  
+  .room-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Room Card Styles */
+.room-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 20px auto;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .room-image {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 265px;  
+    position: relative;
+  }
+  
+  .room-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 22px;
+    color: #ff5a5f;
+    cursor: pointer;
+    /* Retirer la règle hover pour garder le cœur visible */
+  }
+  
+  .room-info {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .room-info h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .room-info p {
+    margin: 5px 0;
+    color: #717171;
+    font-size: 14px;
+  }
+  
+  .room-info .divider {
+    margin: 0 5px;
+    color: #c4c4c4;
+  }
+  
+  .price {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .screen {
+    font-weight: normal;
+    font-size: 14px;
+    color: #717171;
+  }
+  
+  .rating {
+    font-size: 16px;
+    color: #ff5a5f;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  
+  .heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: grey;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1200px) {
+    .room-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 878px) {
+    .room-container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+    }
+    .price-toggle-container {
+        
+        width: 60%;
+        
+    
+    }
+  }
+  
+  /* Fix the issue for width 677px to 420px */
+  @media (max-width: 677px) and (min-width: 420px) {
+    .room-container {
+      grid-template-columns: 1fr;
+      max-width: 90%; /* Set the maximum width to 90% of the viewport */
+      margin-left: auto; /* Ensure the container is centered */
+      margin-right: auto;
+      padding: 0 10px; /* Add padding to prevent the content from touching the sides */
+    }
+  
+    .room-card {
+      margin: 0 auto; /* Center the card within the container */
+      width: 100%; /* Ensure the card takes full width */
+    }
+  }
+  
+  /* Full-width on smaller screens */
+  @media (max-width: 420px) {
+    .room-container {
+      grid-template-columns: 1fr;
+      max-width: 100%; /* Ensure the container takes the full width */
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 10px;
+    }
+  
+    .room-card {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  
+  footer {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .price-toggle-container {
+        
+    width: 80%;
+    
+
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #717171;
+}
+
+.footer-left p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.footer-left ul, .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-left ul li, .footer-right ul li {
+    margin-right: 15px;
+}
+
+.footer-left ul li a, .footer-right ul li a {
+    text-decoration: none;
+    color: #717171;
+}
+
+.footer-right ul li a::after {
+    content: '▾';
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.footer-left ul li a:hover, .footer-right ul li a:hover {
+    color: #000;
+}
+
+
+
+
+
+
+
+
+/* Profile Popup Styles */
+.profile-popup {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 340px;
+  height: 80vh; /* Adjust height to allow for scrolling within the popup */
+  background-color: #f9f7f3;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+  overflow-y: auto; /* Enable vertical scrolling */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.profile-popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Popup Content Padding */
+.popup-content {
+  padding: 20px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Profile Header Styles */
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(212, 212, 212);
+  text-align: center;
+  margin-top: 35px;
+}
+
+.profile-header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  background-color: #ffffff;
+  
+  margin: auto;
+  
+  text-align: center;
+  
+}
+
+.profile-header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-header h3 {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.superhost-badge {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  
+  border-radius: 20px;
+}
+
+.rating-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+
+.profi-section {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  flex-direction: column;
+  margin-top: 5px;
+
+}
+
+.rating-section p {
+  font-size: 12px;
+  color: #333;
+}
+
+.rating-section strong {
+  font-weight: bold;
+}
+
+/* Verified Checkmark Icon */
+.superhost-badge:after {
+  content: '\f00c'; /* Font Awesome checkmark */
+  font-family: FontAwesome;
+  color: #000000;
+  margin-left: 5px;
+}
+
+
+/* Profile Info */
+.profile-info p {
+  margin: 8px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+}
+
+.profile-info p i {
+  margin-right: 10px;
+  color: #9b9b9b;
+  
+}
+
+.ask-rahul{
+  border-top: 1px solid rgb(212, 212, 212);
+}
+
+.past-trips{
+  border-top: 1px solid rgb(212, 212, 212);
+}
+
+past-trips{
+  border-top: 1px solid rgb(212, 212, 212);
+}
+
+/* Ask Rahul About */
+.ask-rahul h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ask-rahul .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ask-rahul .tags span {
+  background-color: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: #333;
+}
+
+/* Past Trips */
+.past-trips h4 {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.trip-cards {
+  display: flex;
+  gap: 10px;
+}
+.rating-section{
+  margin-left: 10px;
+}
+.trip-card {
+  background-color: #daf5d9; /* Light green background */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.trip-card1 {
+  background-color: #d9f3f5; /* Light green background */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+}
+
+#tes {
+  margin-bottom: 10px;
+  
+}
+
+/* Overlay Background */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+@media (max-width: 300px) {
+  .profi-section {
+    margin-left: -30px;
+  }
+  .profile-header {
+    margin-left: 2px;
+  }
+
+  
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-popup {
+    width: 90%;
+    right: 5%;
+    height: 80vh;
+  }
+
+  .profile-header img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile-header h3 {
+    font-size: 18px;
+  }
+
+  .trip-card {
+    font-size: 12px;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .profile-popup {
+    width: 95%;
+    right: 2.5%;
+    height: 80vh;
+  }
+  .ask-rahul .tags span {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Date Popup Fullscreen */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f9f7f3;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+  padding: 0;
+}
+
+.popup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ensure iframe fills the entire popup */
+#calendar-iframe {
+  width: 100%;
+  height: 100vh;  /* Full height of viewport */
+}
+
+/* Close Button at the top-right */
+.close-btn-date {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+/* Overlay Fullscreen */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Make sure the body doesn't scroll when the popup is open */
+body.no-scroll {
+  overflow: hidden;
+}
